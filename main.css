@@ -1,0 +1,204 @@
+@font-face{
+	font-family: modenine;
+	src: url(Modenine-2OPd.ttf);
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+html, body, div, h1, p{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-size: 100%;
+}
+
+body{
+
+}
+
+.heading{
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+
+.typewriter{
+	display: inline-block;
+
+}
+
+p{
+	font-size: 20px;
+	font-family: modenine;
+}
+
+h1{
+	font-family: modenine;
+  	font-size: 30px;
+}
+
+.heading p{
+	
+	color: rgba(255, 255, 255, 0.75);
+	
+	margin-top: 20px;
+	margin-bottom: 90px;
+}
+
+
+.typewriter h1 {
+  
+  	color: #fff;
+  	font-family: modenine;
+  	font-size: 30px;
+  	overflow: hidden; /* Ensures the content is not revealed until the animation */
+  	border-right: .15em solid white; /* The typwriter cursor */
+  	white-space: nowrap; /* Keeps the content on a single line */
+  	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  	letter-spacing: .15em; /* Adjust as needed */
+  	animation: 
+    	typing 3.5s steps(20, end),
+    	blink-caret .5s step-end infinite;
+
+}
+
+/* The typing effect */
+@keyframes typing {
+  	from { width: 0 }
+  	to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+#header{
+	
+	background-color: #2e2e2e;
+	color:rgba(255, 255, 255, 0.85);
+	padding: 10px;
+	text-align: center;
+}
+
+#footer{
+	
+	background-color: #2e2e2e;
+	color:rgba(255, 255, 255, 0.85);
+	padding: 70px;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	font-family: modenine;
+	font-size: 20px;
+	
+	padding: 20px;
+}
+
+
+a.scroll-btn{
+	color: white;
+	border: 3px solid white;
+}
+
+a.scroll-btn:hover{
+	background-color: white;
+	color: black;
+	border: 3px solid black;
+}
+
+a.scroll-black-btn{
+	color: black;
+	border: 3px solid black;
+}
+
+a.scroll-black-btn:hover{
+	background-color: black;
+	color: white;
+	border: 3px solid white;
+}
+
+#section-white{
+	padding: 60px;
+	
+}
+
+.section-two{
+	
+	padding-top: 75px;
+	padding-bottom: 75px;
+
+}
+
+.section-two-text{
+	padding-top: 20px;
+
+	
+}
+
+.image-left{
+	width: 100%;
+	max-width: 600px;
+	
+}
+
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 1000px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+.footer{
+	padding: 
+}
+
+.icons{
+	font-size:36px;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+a.icons:hover{
+	color: rgba(255, 255, 255, 1);	
+}
